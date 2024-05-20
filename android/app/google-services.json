@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "434612028934",
+    "project_id": "flutter-67993",
+    "storage_bucket": "flutter-67993.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434612028934:android:734e966b855dc2d127a587",
+        "android_client_info": {
+          "package_name": "com.example.hamburguerias"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGdT073j-vkRaRbklv6Zk3lXPiMV_ydvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
