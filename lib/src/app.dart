@@ -20,11 +20,24 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      onGenerateRoute: (settings) {
+        if (settings.name == SampleItemDetailsView.routeName) {
+          final args = settings.arguments as String;
+          return MaterialPageRoute(
+            builder: (context) {
+              return SampleItemDetailsView(hamburgeriaId: args);
+            },
+          );
+        }
+
+        // Add other routes here
+
+        return null;
+      },
       routes: {
         '/': (context) => SampleItemListView(),
-        '/sample_item': (context) => SampleItemDetailsView(),
         '/login': (context) => LoginView(),
-        '/register': (context) => RegisterView(), // Adiciona esta linha
+        '/register': (context) => RegisterView(),
         '/add_hamburgeria': (context) => AddHamburgeriaView(),
       },
     );
